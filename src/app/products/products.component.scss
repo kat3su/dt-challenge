@@ -1,0 +1,44 @@
+.products-page {
+  max-width: 1024px;
+  margin: auto;
+
+  .products-heading {
+    background: royalblue;
+    margin-bottom: 1rem;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h1, select {
+      margin: .5rem 0;
+    }
+  }
+
+  .product-detail {
+    box-shadow: 0 0 0 1px #ccc;
+    padding: 1%;
+
+
+    .product-image {
+      width: 100%;
+    }
+
+    .product-badge {
+      padding: 1rem 2rem;
+      background: red;
+      color: #ffffff;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+
+    .product-name, .product-price {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 1rem 0;
+      line-height: 100%;
+      padding: 0;
+      display: block;
+    }
+  }
+}

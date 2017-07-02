@@ -17,6 +17,6 @@ import { ProductsComponent } from './products/products.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ProductsComponent]
 })
 export class AppModule { }
