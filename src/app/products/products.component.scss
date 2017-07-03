@@ -1,9 +1,8 @@
 .products-page {
-  max-width: 1024px;
   margin: auto;
 
   .products-heading {
-    background: royalblue;
+    background: #def1f4;
     margin-bottom: 1rem;
 
     h1 {
@@ -15,30 +14,45 @@
     }
   }
 
-  .product-detail {
-    box-shadow: 0 0 0 1px #ccc;
-    padding: 1%;
+  .product-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+    .product-detail {
+      border: 1px solid #ccc;
+      padding: 1%;
 
-    .product-image {
-      width: 100%;
-    }
+      .product-image {
+        width: 100%;
+      }
 
-    .product-badge {
-      padding: 1rem 2rem;
-      background: red;
-      color: #ffffff;
-      display: inline-block;
-      text-transform: uppercase;
-    }
+      .product-badges {
+        height: 5rem;
 
-    .product-name, .product-price {
-      font-size: 2rem;
-      font-weight: bold;
-      margin: 1rem 0;
-      line-height: 100%;
-      padding: 0;
-      display: block;
+        .product-badge {
+          padding: 1rem 2rem;
+          color: #ffffff;
+          display: inline-block;
+        }
+
+        .product-badge.sale {
+          background: #009900;
+        }
+
+        .product-badge.exclusive {
+          background: #cc3333;
+        }
+      }
+
+      .product-name, .product-price {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 1rem 0;
+        line-height: 100%;
+        padding: 0;
+        display: block;
+      }
     }
   }
 }
