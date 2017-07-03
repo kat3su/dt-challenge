@@ -40,9 +40,13 @@ export class ProductsComponent implements OnInit {
     );
   }
 
+  /**
+   * Check if the provided product matches with the filter
+   * @param product
+   * @returns {boolean}
+   */
   isFilteredProduct(product: Product) {
     // If filter hasn't been set, then always return true
-    console.log(this.selectedSizeFilter);
     if (!this.selectedSizeFilter) {
       return true;
     }
@@ -50,6 +54,7 @@ export class ProductsComponent implements OnInit {
     if (product.size.indexOf(this.selectedSizeFilter) !== -1) {
       return true;
     }
+    // Return false if doesn't match any
     return false;
   }
 }
